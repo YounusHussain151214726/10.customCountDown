@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom - Countdown</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <video class="vedio-background" loop muted autoplay>
+        <source src="./Background/Alarm - 15629 (1).mp4" type="video/mp4" />
+      </video>
+
+      <section class="overlay"></section>
+
+      <!-- select Countdown Container -->
+
+      <section class="select-countdown" id="select-countdown">
+        <h2>Countdown</h2>
+        <form class="form" id="form">
+          <!-- title -->
+          <label for="title"> Title</label>
+          <input type="text" placeholder="Countdown Title" id="in-title" />
+          <!-- date input -->
+          <label for="date">Date</label>
+          <input type="date" id="in-date" max="2022-12-31" />
+          <!-- button -->
+          <button type="submit" id="btn">Start</button>
+        </form>
+      </section>
+
+      <section class="counter" id="counter" hidden>
+        <h2 id="Title">Counter</h2>
+
+        <ul>
+          <li>
+            <span id="day">1</span>
+            <h3>Day</h3>
+          </li>
+          <li>
+            <span id="hr">2</span>
+            <h3>Hour</h3>
+          </li>
+          <li>
+            <span id="mnt">3</span>
+            <h3>Minutes</h3>
+          </li>
+          <li>
+            <span id="sec">4</span>
+            <h3>Seconds</h3>
+          </li>
+        </ul>
+
+        <button id="reset">Reset</button>
+      </section>
+
+      <!-- Countdown page -->
+
+      <!-- Countdown Complete page -->
+      <section class="select-countdown" id="comp-countdown" hidden>
+        <h1>Countdown Complete</h1>
+      </section>
+    </main>
+  </body>
+</html>

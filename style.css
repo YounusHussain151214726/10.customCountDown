@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.vedio-background{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+height: auto;
+border: 2px solid black;
+
+}
+
+video{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-countdown{
+ z-index: 2;   
+    border: 2px solid red;
+width: 600px;
+height: auto;
+padding: .5rem;
+background-color: rgba(230, 240,234, 0.6);
+text-align: center;
+}
+
+
+
+label{
+    display: block;
+    padding: .5rem 0 .5rem 0;
+    float: left;
+}
+
+input{
+    width: 100%;
+height: 2rem;
+border-radius: .6rem;
+outline: none;
+border: none;
+}
+
+
+input{
+    padding: 1rem;
+}
+
+
+button{
+width: 50%;
+padding: .5rem;
+margin-top: 1rem;
+margin-bottom:1rem;
+font-size: 1rem;
+font-weight: 600;
+border-radius: .4rem;
+background-color: brown;
+color: white;
+}
+
+button:hover{
+    filter: brightness(110%);
+}
+
+
+
+/* counter */
+
+.counter{
+    z-index: 2;   
+    border: 2px solid red;
+width: 600px;
+height: auto;
+padding: 2rem;
+background-color: rgba(230, 240,234, 0.6);
+text-align: center;
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+margin: 1rem;
+}
+
+span{
+    font-size: 2rem;
+}
+h3{
+    font-size: 2rem;
+}
